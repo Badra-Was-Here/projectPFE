@@ -3,7 +3,7 @@ import Category from "@/models/category"
 import Categories from "./_components/Categories";
 
 export default async function SearchPage() {
-  
+  // ddsfds
   await connectMongoDB();
   const categories = await Category.find().sort({name:1});
 
