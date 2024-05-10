@@ -26,10 +26,11 @@ const stripeCustomerSchema = new Schema(
 );
 
 //  models from the schemas
+mongoose.models = {};
 const Purchase =
   mongoose.models.Purchase || mongoose.model("Purchase", purchaseSchema);
 const StripeCustomer =
   mongoose.models.StripeCustomer ||
   mongoose.model("StripeCustomer", stripeCustomerSchema);
 
-export default { Purchase, StripeCustomer };
+export  { Purchase, StripeCustomer };

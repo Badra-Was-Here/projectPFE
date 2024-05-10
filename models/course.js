@@ -34,7 +34,7 @@ const courseSchema = new Schema(
     purchases: [
       {
         type: Schema.Types.ObjectId,
-        ref: "purchase",
+        ref: "Purchase",
       },
     ],
   },
